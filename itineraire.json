@@ -1,0 +1,470 @@
+{
+  "pays": "Guinée",
+  "drapeau": "🇬🇳",
+  "symbole": "🐘",
+  "titre": "Évasion au Cœur de la Guinée Sauvage: Laine et le Haut Niger",
+  "budget_total": "2690€",
+  "duree": "16 jours",
+  "temps_vol": "Environ 2h30 depuis Bamako, Mali (vol direct vers Conakry)",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Conakry, première immersion",
+      "legende": "Après votre vol depuis Bamako, vous atterrissez dans la capitale guinéenne, Conakry. Prenez le temps de vous installer et de vous imprégner de l'ambiance vibrante de cette ville côtière. Une balade au marché local vous offrira un premier aperçu des couleurs et des saveurs guinéennes, une introduction douce à votre aventure.",
+      "lieu": "Conakry",
+      "activites": [
+        "🛬 <strong>Arrivée à Conakry</strong>: Installation à votre hôtel pour vous reposer après le voyage. Profitez de la fin de journée pour vous détendre.",
+        "🚶‍♂️ <strong>Balade au marché de Madina</strong>: Explorez l'un des plus grands marchés d'Afrique de l'Ouest, un véritable kaléidoscope de couleurs, d'odeurs et de sons. C'est l'endroit idéal pour observer la vie locale et faire quelques emplettes."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "Le trafic à Conakry peut être dense. Prévoyez des temps de déplacement plus longs que prévu, surtout aux heures de pointe."
+        },
+        {
+          "symbole": "💰",
+          "titre": "Monnaie locale",
+          "texte": "La monnaie est le Franc Guinéen (GNF). Il est conseillé d'avoir de petites coupures pour les marchés et les transports locaux."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🛣️",
+      "titre": "Voyage vers Faranah, au cœur du pays",
+      "legende": "Aujourd'hui marque le début de votre périple vers l'intérieur des terres, en direction de Faranah. Ce long trajet vous fera traverser des paysages variés, des plaines côtières aux premières collines verdoyantes. C'est une journée dédiée à l'observation de la vie rurale guinéenne et à la découverte des vastes étendues qui caractérisent le pays.",
+      "lieu": "Conakry - Faranah",
+      "activites": [
+        "🚗 <strong>Voyage Conakry - Faranah</strong>: Départ matinal pour un long trajet en véhicule (environ 10-12 heures) vers Faranah. Profitez des paysages changeants et des arrêts dans les villages traversés.",
+        "🏞️ <strong>Observation des paysages</strong>: Admirez les rizières, les forêts et les villages traditionnels qui défilent par la fenêtre. C'est une excellente occasion de voir la diversité géographique de la Guinée."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "🎒",
+          "titre": "Préparation",
+          "texte": "Prévoyez des snacks, de l'eau en quantité suffisante et de quoi vous occuper pour ce long trajet. Le confort des routes peut varier."
+        },
+        {
+          "symbole": "💡",
+          "titre": "Conseil",
+          "texte": "Les arrêts sont souvent l'occasion de goûter à des spécialités locales vendues en bord de route, comme des fruits frais ou des beignets."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🌳",
+      "titre": "Découverte de Faranah et préparation du Parc National",
+      "legende": "Après le long voyage, Faranah vous accueille avec son ambiance plus calme et son environnement verdoyant. Cette journée est consacrée à la découverte de la ville et à la préparation de votre immersion dans le Parc National du Haut Niger. Rencontrez les guides locaux et familiarisez-vous avec la culture de la région, porte d'entrée vers la nature sauvage.",
+      "lieu": "Faranah",
+      "activites": [
+        "🚶‍♀️ <strong>Exploration de Faranah</strong>: Balade dans la ville pour découvrir son marché, ses rues animées et son ambiance provinciale. C'est une ville carrefour importante.",
+        "🤝 <strong>Rencontre avec les guides locaux</strong>: Organisez les détails de votre excursion dans le Parc National du Haut Niger. Ils vous donneront des informations précieuses sur la faune et la flore."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🗺️",
+          "titre": "Orientation",
+          "texte": "Faranah est une base stratégique pour explorer le Parc National du Haut Niger et les environs de Laine."
+        },
+        {
+          "symbole": "🗣️",
+          "titre": "Langues",
+          "texte": "Le français est la langue officielle, mais le Malinké et le Peul sont largement parlés dans la région de Faranah."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🐆",
+      "titre": "Immersion dans le Parc National du Haut Niger",
+      "legende": "Aujourd'hui, vous plongez au cœur de la biodiversité guinéenne avec une première journée d'exploration du Parc National du Haut Niger. Ce sanctuaire abrite une faune et une flore riches, offrant des paysages de savane, de forêts galeries et de cours d'eau. Préparez-vous à des rencontres inoubliables avec la nature sauvage.",
+      "lieu": "Parc National du Haut Niger",
+      "activites": [
+        "🌿 <strong>Randonnée dans la savane</strong>: Accompagné d'un guide local, partez à la découverte des vastes étendues de savane. Gardez l'œil ouvert pour observer antilopes, singes et oiseaux.",
+        "🛶 <strong>Balade en pirogue sur le Niger</strong>: Naviguez sur les eaux calmes du fleuve Niger, observant la vie aquatique et les villages riverains. C'est une perspective unique sur le parc."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Sécurité",
+          "texte": "Toujours suivre les instructions de votre guide, surtout lors des randonnées et des observations de la faune."
+        },
+        {
+          "symbole": "☀️",
+          "titre": "Équipement",
+          "texte": "Prévoyez des vêtements légers, un chapeau, de la crème solaire et un répulsif anti-moustiques. Des chaussures de marche confortables sont indispensables."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🐒",
+      "titre": "Faune et flore du Haut Niger",
+      "legende": "Poursuite de l'exploration du Parc National du Haut Niger, avec un accent sur l'observation de la faune et la découverte de ses écosystèmes variés. Chaque sentier révèle de nouvelles merveilles, des arbres centenaires aux traces d'animaux. C'est une journée pour se connecter profondément avec la nature guinéenne.",
+      "lieu": "Parc National du Haut Niger",
+      "activites": [
+        "🚶‍♂️ <strong>Trekking dans les forêts galeries</strong>: Explorez les forêts denses qui bordent le fleuve, abritant une biodiversité différente. C'est un excellent endroit pour l'observation des oiseaux et des primates.",
+        "📸 <strong>Safari photo</strong>: Tentez de capturer la beauté des paysages et la discrétion des animaux. Votre guide vous aidera à repérer les meilleures opportunités."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🌿",
+          "titre": "Biodiversité",
+          "texte": "Le parc est un refuge pour de nombreuses espèces, dont certaines sont menacées. Respectez l'environnement et ne laissez aucune trace de votre passage."
+        },
+        {
+          "symbole": "💧",
+          "titre": "Hydratation",
+          "texte": "Il fait chaud et humide, buvez beaucoup d'eau pour rester hydraté tout au long de la journée."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🛖",
+      "titre": "Rencontre avec les communautés locales",
+      "legende": "Au-delà de la faune, le Parc National du Haut Niger est aussi le foyer de communautés humaines. Cette journée est dédiée à la rencontre avec les habitants des villages riverains, pour comprendre leur mode de vie traditionnel et leur relation harmonieuse avec la nature. Une immersion culturelle enrichissante au cœur de la Guinée.",
+      "lieu": "Parc National du Haut Niger",
+      "activites": [
+        "🤝 <strong>Visite d'un village riverain</strong>: Partagez un moment avec les habitants, découvrez leurs coutumes, leur artisanat et leur quotidien. C'est une expérience humaine authentique.",
+        "🎣 <strong>Initiation à la pêche traditionnelle</strong>: Apprenez les techniques de pêche locales auprès des villageois. Une activité qui renforce les liens et offre un aperçu de leur subsistance."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Échanges culturels",
+          "texte": "Un petit cadeau (cahiers, stylos pour les enfants) est toujours apprécié, mais le respect et l'intérêt sont les plus beaux des présents."
+        },
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Demandez toujours la permission avant de prendre des photos des personnes, par respect pour leur intimité."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🌅",
+      "titre": "Lever de soleil sur le Niger et retour à Faranah",
+      "legende": "Profitez d'un dernier lever de soleil magique sur le fleuve Niger, un moment de quiétude avant de quitter le parc. Après ces jours d'immersion dans la nature, vous retournez à Faranah, la tête remplie de souvenirs. C'est l'occasion de se reposer et de se préparer pour la prochaine étape de votre voyage vers Laine.",
+      "lieu": "Parc National du Haut Niger - Faranah",
+      "activites": [
+        "🌄 <strong>Lever de soleil sur le fleuve Niger</strong>: Assistez à un spectacle inoubliable alors que le soleil se lève sur le fleuve, peignant le ciel de couleurs chaudes. Un moment de sérénité.",
+        "🚗 <strong>Retour à Faranah</strong>: Après le petit-déjeuner, reprenez la route vers Faranah. Profitez de l'après-midi pour vous détendre à l'hôtel ou explorer davantage la ville."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🛌",
+          "titre": "Repos",
+          "texte": "Après plusieurs jours d'activités intenses, une après-midi de repos à Faranah est bienvenue pour recharger les batteries."
+        },
+        {
+          "symbole": "🍽️",
+          "titre": "Gastronomie",
+          "texte": "Dégustez un plat local à Faranah, comme le \"riz gras\" ou le \"poulet yassa\", pour savourer les saveurs guinéennes."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "➡️",
+      "titre": "En route vers Laine, cœur de la culture Peule",
+      "legende": "Aujourd'hui, votre aventure vous mène vers Laine, une sub-préfecture de la région de Faranah, réputée pour son authenticité et sa culture Peule. Le trajet vous fera traverser des paysages vallonnés et des villages traditionnels, offrant un aperçu de la vie rurale profonde. Laine sera votre base pour les prochains jours, une immersion totale.",
+      "lieu": "Faranah - Laine",
+      "activites": [
+        "🚗 <strong>Voyage Faranah - Laine</strong>: Départ pour Laine, un trajet plus court que le précédent mais tout aussi pittoresque. Observez les changements de paysages et l'architecture des villages.",
+        "🏡 <strong>Installation et découverte des environs</strong>: Une fois installé, faites une première balade légère dans le village de Laine pour vous familiariser avec les lieux et saluer les habitants."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "📍",
+          "titre": "Localisation",
+          "texte": "Laine est une zone rurale, attendez-vous à des hébergements simples mais authentiques, souvent tenus par des familles locales."
+        },
+        {
+          "symbole": "🤝",
+          "titre": "Accueil",
+          "texte": "Les habitants de Laine sont connus pour leur hospitalité. Un sourire et quelques mots en français ou en Peul ouvriront bien des portes."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🌾",
+      "titre": "Vie quotidienne et artisanat à Laine",
+      "legende": "Plongez dans le quotidien des habitants de Laine. Cette journée est dédiée à la compréhension de leur mode de vie, de leurs traditions et de leur artisanat. Vous aurez l'opportunité d'observer les activités agricoles, de découvrir les techniques ancestrales et de partager des moments authentiques avec les communautés Peules.",
+      "lieu": "Laine",
+      "activites": [
+        "🧑‍🌾 <strong>Observation des activités agricoles</strong>: Visitez les champs environnants et observez les méthodes de culture traditionnelles. Apprenez-en plus sur les cultures vivrières locales.",
+        "🎨 <strong>Découverte de l'artisanat local</strong>: Rencontrez des artisans qui travaillent le cuir, le bois ou tissent des étoffes. C'est une belle occasion de rapporter un souvenir unique et de soutenir l'économie locale."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🛍️",
+          "titre": "Souvenirs",
+          "texte": "L'artisanat local est souvent de grande qualité et représente un excellent moyen de soutenir directement les communautés."
+        },
+        {
+          "symbole": "🗣️",
+          "titre": "Communication",
+          "texte": "Quelques phrases de base en Peul (comme \"Afonama\" pour bonjour) seront très appréciées par les habitants."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "⛰️",
+      "titre": "Randonnée et paysages autour de Laine",
+      "legende": "Les environs de Laine offrent des paysages vallonnés et des sentiers propices à la randonnée. Accompagné d'un guide local, partez à la découverte des beautés naturelles cachées de la région. Cascades secrètes, points de vue panoramiques et végétation luxuriante vous attendent pour une journée d'exploration active.",
+      "lieu": "Laine et environs",
+      "activites": [
+        "🚶‍♀️ <strong>Randonnée vers une cascade locale</strong>: Partez en randonnée à travers la brousse pour atteindre une cascade rafraîchissante, un véritable havre de paix. Profitez d'une baignade si le lieu le permet.",
+        "🏞️ <strong>Ascension d'un point de vue panoramique</strong>: Grimpez sur une colline voisine pour admirer la vue imprenable sur les paysages environnants de Laine, ses villages et ses champs."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Chaussures",
+          "texte": "Prévoyez de bonnes chaussures de marche, les sentiers peuvent être rocailleux ou glissants par endroits."
+        },
+        {
+          "symbole": "💧",
+          "titre": "Eau",
+          "texte": "Emportez suffisamment d'eau pour la randonnée, car les sources d'approvisionnement peuvent être rares sur les sentiers."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🎶",
+      "titre": "Musique, danse et contes Peuls",
+      "legende": "Immergez-vous davantage dans la richesse culturelle Peule de Laine. Cette journée est dédiée aux arts traditionnels, avec la découverte de la musique, des danses et des contes qui rythment la vie des communautés. Une soirée spéciale pourra être organisée pour une expérience mémorable et festive.",
+      "lieu": "Laine",
+      "activites": [
+        "🥁 <strong>Initiation aux instruments de musique traditionnels</strong>: Découvrez le djembé, le kora ou le balafon et apprenez quelques rythmes de base. Une expérience sonore unique.",
+        "💃 <strong>Soirée contes et danses traditionnelles</strong>: Participez à une soirée où les anciens racontent des légendes et où les jeunes exécutent des danses ancestrales. Un moment de partage inoubliable."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🌟",
+          "titre": "Expérience",
+          "texte": "Ces moments de partage culturel sont souvent les plus marquants d'un voyage. Laissez-vous porter par l'ambiance."
+        },
+        {
+          "symbole": "🙏",
+          "titre": "Respect",
+          "texte": "Montrez votre respect pour les traditions et les artistes. Votre enthousiasme sera très apprécié."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "📚",
+      "titre": "Éducation et projets communautaires",
+      "legende": "Si vous le souhaitez, cette journée peut être consacrée à la découverte des initiatives locales en matière d'éducation ou de développement communautaire à Laine. C'est une opportunité de comprendre les défis et les espoirs des habitants, et de voir comment le tourisme peut contribuer positivement à leur quotidien.",
+      "lieu": "Laine",
+      "activites": [
+        "🏫 <strong>Visite d'une école locale</strong>: Rencontrez les enseignants et les élèves, observez le fonctionnement d'une école rurale. Une expérience touchante et instructive.",
+        "🌱 <strong>Découverte de projets de développement</strong>: Si des projets (agriculture durable, santé, etc.) sont en cours, informez-vous sur leur impact et leur fonctionnement. Une belle façon de voir l'engagement local."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🤝",
+          "titre": "Contribution",
+          "texte": "Si vous souhaitez faire un don, privilégiez les fournitures scolaires ou le matériel plutôt que l'argent liquide, et passez par la direction de l'école ou les responsables de projet."
+        },
+        {
+          "symbole": "🌍",
+          "titre": "Tourisme responsable",
+          "texte": "Le tourisme peut être un levier de développement. Choisissez des opérateurs qui travaillent en étroite collaboration avec les communautés locales."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🏞️",
+      "titre": "Exploration des sources du Niger",
+      "legende": "Une journée d'excursion mémorable vous attend, direction les sources du fleuve Niger, un lieu emblématique et sacré. C'est une opportunité unique de voir où l'un des plus grands fleuves d'Afrique prend sa naissance, au milieu de paysages verdoyants et paisibles. Une expérience à la fois naturelle et symbolique.",
+      "lieu": "Laine - Sources du Niger",
+      "activites": [
+        "🚗 <strong>Excursion aux sources du Niger</strong>: Partez en véhicule pour une excursion vers les sources du fleuve Niger, un site naturel et historique important. Le trajet offre de belles vues sur la campagne.",
+        "🚶‍♂️ <strong>Découverte du site des sources</strong>: Explorez le lieu où le Niger prend sa source, souvent marqué par un petit ruisseau qui deviendra un fleuve majestueux. Un moment de contemplation et de réflexion."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "🗺️",
+          "titre": "Signification",
+          "texte": "Le Niger est vital pour de nombreux pays d'Afrique de l'Ouest. Voir sa source est une expérience qui donne une perspective sur son importance."
+        },
+        {
+          "symbole": "🌿",
+          "titre": "Environnement",
+          "texte": "Le site est souvent entouré d'une végétation dense. Respectez la nature et ne laissez aucun déchet."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "↩️",
+      "titre": "Retour vers Conakry, souvenirs en tête",
+      "legende": "Après ces jours riches en découvertes à Laine et dans la région de Faranah, il est temps de reprendre la route vers Conakry. Ce long trajet de retour est l'occasion de repenser à toutes les expériences vécues, aux paysages traversés et aux rencontres faites. Préparez-vous à retrouver l'effervescence de la capitale.",
+      "lieu": "Laine - Conakry",
+      "activites": [
+        "🚗 <strong>Voyage Laine - Conakry</strong>: Départ matinal pour le long trajet de retour vers Conakry. Prévoyez des pauses régulières pour vous dégourdir les jambes.",
+        "🌆 <strong>Arrivée à Conakry et repos</strong>: Installation à votre hôtel à Conakry. Profitez de la soirée pour vous détendre et dîner dans un restaurant de la capitale."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "🛣️",
+          "titre": "Confort",
+          "texte": "Les routes peuvent être exigeantes. Un véhicule confortable et un chauffeur expérimenté sont essentiels pour ce type de trajet."
+        },
+        {
+          "symbole": "🎶",
+          "titre": "Ambiance",
+          "texte": "Profitez de la musique locale dans le véhicule pour rendre le trajet plus agréable et continuer l'immersion."
+        }
+      ]
+    },
+    {
+      "jour": 15,
+      "symbole": "🏝️",
+      "titre": "Détente et culture à Conakry",
+      "legende": "Pour cette avant-dernière journée, profitez de Conakry pour une touche de détente et de culture. Une excursion aux îles de Loos offre une échappée belle loin de l'agitation urbaine, tandis que la visite du musée national vous plonge dans l'histoire et les traditions guinéennes. Une belle manière de conclure votre voyage.",
+      "lieu": "Conakry",
+      "activites": [
+        "🚤 <strong>Excursion aux îles de Loos</strong>: Prenez une pirogue pour une journée d'évasion sur ces îles paradisiaques. Profitez des plages, de la baignade et des fruits de mer frais.",
+        "🏛️ <strong>Visite du Musée National de Guinée</strong>: Découvrez l'histoire, l'art et les traditions des différentes ethnies guinéennes à travers ses collections d'objets et d'artefacts."
+      ],
+      "illustration": "jour15.jpg",
+      "encarts": [
+        {
+          "symbole": "🏖️",
+          "titre": "Détente",
+          "texte": "Les îles de Loos sont parfaites pour se relaxer et profiter de l'océan après l'aventure dans l'intérieur du pays."
+        },
+        {
+          "symbole": "⏰",
+          "titre": "Horaires",
+          "texte": "Vérifiez les horaires des pirogues pour les îles de Loos et les heures d'ouverture du musée avant de vous y rendre."
+        }
+      ]
+    },
+    {
+      "jour": 16,
+      "symbole": "🛫",
+      "titre": "Départ de Conakry",
+      "legende": "C'est le dernier jour de votre voyage en Guinée. Après un petit-déjeuner tranquille, il est temps de vous diriger vers l'aéroport international de Conakry pour votre vol de retour. Emportez avec vous les souvenirs inoubliables de la nature sauvage, des rencontres authentiques et de la richesse culturelle de ce pays fascinant.",
+      "lieu": "Conakry",
+      "activites": [
+        "🛍️ <strong>Derniers achats de souvenirs</strong>: Si le temps le permet, faites quelques derniers achats de souvenirs au marché artisanal avant de partir.",
+        "🛫 <strong>Transfert à l'aéroport et vol retour</strong>: Organisez votre transfert vers l'aéroport international Ahmed Sékou Touré (CKY) pour votre vol de retour vers Bamako, Mali."
+      ],
+      "illustration": "jour16.jpg",
+      "encarts": [
+        {
+          "symbole": "✈️",
+          "titre": "Aéroport",
+          "texte": "Arrivez à l'aéroport avec suffisamment d'avance, les formalités peuvent prendre du temps."
+        },
+        {
+          "symbole": "🛂",
+          "titre": "Documents",
+          "texte": "Assurez-vous d'avoir tous vos documents de voyage (passeport, billet d'avion, visa) à portée de main."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "750€/pers (vol A/R Bamako - Conakry en classe économique)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "420€/pers (taxi aéroport, bus/taxi brousse Conakry-Faranah A/R, transports locaux et excursions)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "480€/pers (environ 30€/jour pour 16 jours, cuisine locale et restaurants simples)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "790€/pers (hôtels 3 étoiles équivalents ou guesthouses confortables pour 15 nuits)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "250€/pers (entrées parcs, guides locaux, excursions aux îles de Loos et sources du Niger)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de novembre à avril, correspondant à la saison sèche.",
+      "symbole": "☀️"
+    },
+    {
+      "titre": "La saison sèche offre des conditions de voyage plus agréables, des routes plus praticables et moins de moustiques.",
+      "symbole": "🌡️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "La Guinée est un pays d'Afrique de l'Ouest, riche en diversité ethnique (Peuls, Malinkés, Soussous, etc.) et en paysages, de la côte aux montagnes du Fouta Djallon et aux savanes de la Haute-Guinée.",
+      "symbole": "🌍"
+    },
+    {
+      "titre": "La population est majoritairement jeune et très accueillante. Le français est la langue officielle, mais de nombreuses langues locales sont parlées.",
+      "symbole": "🗣️"
+    },
+    {
+      "titre": "Insolite: La Guinée est le \"château d'eau\" de l'Afrique de l'Ouest, abritant les sources de grands fleuves comme le Niger, le Sénégal et la Gambie.",
+      "symbole": "💧"
+    },
+    {
+      "titre": "La Guinée est également un pays de musique, berceau de nombreux artistes de renommée internationale.",
+      "symbole": "🎶"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Informations générales sur la Guinée",
+      "titre": "Office National du Tourisme Guinéen (à titre indicatif)",
+      "url": "https://www.guinee.travel/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Prévisions météo pour Conakry et Faranah",
+      "titre": "Météo Guinée",
+      "url": "https://www.accuweather.com/fr/gn/conakry/22400/weather-forecast/22400",
+      "symbole": "🌤️"
+    },
+    {
+      "legende": "Conseils aux voyageurs pour la Guinée",
+      "titre": "Ministère de l'Europe et des Affaires étrangères",
+      "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/pays-zones-geographiques/guinee/",
+      "symbole": "🛂"
+    }
+  ]
+}
