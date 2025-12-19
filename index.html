@@ -1,0 +1,748 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion au Cœur de la Guinée Sauvage: Laine et le Haut Niger </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Conakry, première immersion</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Voyage vers Faranah, au cœur du pays</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Découverte de Faranah et préparation du Parc National</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Immersion dans le Parc National du Haut Niger</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Faune et flore du Haut Niger</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Rencontre avec les communautés locales</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Lever de soleil sur le Niger et retour à Faranah</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 En route vers Laine, cœur de la culture Peule</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Vie quotidienne et artisanat à Laine</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Randonnée et paysages autour de Laine</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Musique, danse et contes Peuls</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Éducation et projets communautaires</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Exploration des sources du Niger</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Retour vers Conakry, souvenirs en tête</a>
+            
+                <a href="#jour-15" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J15 Détente et culture à Conakry</a>
+            
+                <a href="#jour-16" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J16 Départ de Conakry</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">LAINE- GUINEE</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Évasion au Cœur de la Guinée Sauvage: Laine et le Haut Niger</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ 16 jours</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 2690€</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 Environ 2h30 depuis Bamako, Mali (vol direct vers Conakry)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Conakry, première immersion</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après votre vol depuis Bamako, vous atterrissez dans la capitale guinéenne, Conakry. Prenez le temps de vous installer et de vous imprégner de l'ambiance vibrante de cette ville côtière. Une balade au marché local vous offrira un premier aperçu des couleurs et des saveurs guinéennes, une introduction douce à votre aventure.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛬 <strong>Arrivée à Conakry</strong>: Installation à votre hôtel pour vous reposer après le voyage. Profitez de la fin de journée pour vous détendre.</li><li>🚶‍♂️ <strong>Balade au marché de Madina</strong>: Explorez l'un des plus grands marchés d'Afrique de l'Ouest, un véritable kaléidoscope de couleurs, d'odeurs et de sons. C'est l'endroit idéal pour observer la vie locale et faire quelques emplettes.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">Le trafic à Conakry peut être dense. Prévoyez des temps de déplacement plus longs que prévu, surtout aux heures de pointe.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💰 Monnaie locale</p>
+                                <p class="text-gray-700">La monnaie est le Franc Guinéen (GNF). Il est conseillé d'avoir de petites coupures pour les marchés et les transports locaux.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage vers Faranah, au cœur du pays</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui marque le début de votre périple vers l'intérieur des terres, en direction de Faranah. Ce long trajet vous fera traverser des paysages variés, des plaines côtières aux premières collines verdoyantes. C'est une journée dédiée à l'observation de la vie rurale guinéenne et à la découverte des vastes étendues qui caractérisent le pays.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Voyage Conakry - Faranah</strong>: Départ matinal pour un long trajet en véhicule (environ 10-12 heures) vers Faranah. Profitez des paysages changeants et des arrêts dans les villages traversés.</li><li>🏞️ <strong>Observation des paysages</strong>: Admirez les rizières, les forêts et les villages traditionnels qui défilent par la fenêtre. C'est une excellente occasion de voir la diversité géographique de la Guinée.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎒 Préparation</p>
+                                <p class="text-gray-700">Prévoyez des snacks, de l'eau en quantité suffisante et de quoi vous occuper pour ce long trajet. Le confort des routes peut varier.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Conseil</p>
+                                <p class="text-gray-700">Les arrêts sont souvent l'occasion de goûter à des spécialités locales vendues en bord de route, comme des fruits frais ou des beignets.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Découverte de Faranah et préparation du Parc National</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après le long voyage, Faranah vous accueille avec son ambiance plus calme et son environnement verdoyant. Cette journée est consacrée à la découverte de la ville et à la préparation de votre immersion dans le Parc National du Haut Niger. Rencontrez les guides locaux et familiarisez-vous avec la culture de la région, porte d'entrée vers la nature sauvage.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚶‍♀️ <strong>Exploration de Faranah</strong>: Balade dans la ville pour découvrir son marché, ses rues animées et son ambiance provinciale. C'est une ville carrefour importante.</li><li>🤝 <strong>Rencontre avec les guides locaux</strong>: Organisez les détails de votre excursion dans le Parc National du Haut Niger. Ils vous donneront des informations précieuses sur la faune et la flore.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Orientation</p>
+                                <p class="text-gray-700">Faranah est une base stratégique pour explorer le Parc National du Haut Niger et les environs de Laine.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗣️ Langues</p>
+                                <p class="text-gray-700">Le français est la langue officielle, mais le Malinké et le Peul sont largement parlés dans la région de Faranah.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion dans le Parc National du Haut Niger</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, vous plongez au cœur de la biodiversité guinéenne avec une première journée d'exploration du Parc National du Haut Niger. Ce sanctuaire abrite une faune et une flore riches, offrant des paysages de savane, de forêts galeries et de cours d'eau. Préparez-vous à des rencontres inoubliables avec la nature sauvage.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌿 <strong>Randonnée dans la savane</strong>: Accompagné d'un guide local, partez à la découverte des vastes étendues de savane. Gardez l'œil ouvert pour observer antilopes, singes et oiseaux.</li><li>🛶 <strong>Balade en pirogue sur le Niger</strong>: Naviguez sur les eaux calmes du fleuve Niger, observant la vie aquatique et les villages riverains. C'est une perspective unique sur le parc.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Sécurité</p>
+                                <p class="text-gray-700">Toujours suivre les instructions de votre guide, surtout lors des randonnées et des observations de la faune.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Équipement</p>
+                                <p class="text-gray-700">Prévoyez des vêtements légers, un chapeau, de la crème solaire et un répulsif anti-moustiques. Des chaussures de marche confortables sont indispensables.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Faune et flore du Haut Niger</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Poursuite de l'exploration du Parc National du Haut Niger, avec un accent sur l'observation de la faune et la découverte de ses écosystèmes variés. Chaque sentier révèle de nouvelles merveilles, des arbres centenaires aux traces d'animaux. C'est une journée pour se connecter profondément avec la nature guinéenne.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚶‍♂️ <strong>Trekking dans les forêts galeries</strong>: Explorez les forêts denses qui bordent le fleuve, abritant une biodiversité différente. C'est un excellent endroit pour l'observation des oiseaux et des primates.</li><li>📸 <strong>Safari photo</strong>: Tentez de capturer la beauté des paysages et la discrétion des animaux. Votre guide vous aidera à repérer les meilleures opportunités.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌿 Biodiversité</p>
+                                <p class="text-gray-700">Le parc est un refuge pour de nombreuses espèces, dont certaines sont menacées. Respectez l'environnement et ne laissez aucune trace de votre passage.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Hydratation</p>
+                                <p class="text-gray-700">Il fait chaud et humide, buvez beaucoup d'eau pour rester hydraté tout au long de la journée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Rencontre avec les communautés locales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Au-delà de la faune, le Parc National du Haut Niger est aussi le foyer de communautés humaines. Cette journée est dédiée à la rencontre avec les habitants des villages riverains, pour comprendre leur mode de vie traditionnel et leur relation harmonieuse avec la nature. Une immersion culturelle enrichissante au cœur de la Guinée.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🤝 <strong>Visite d'un village riverain</strong>: Partagez un moment avec les habitants, découvrez leurs coutumes, leur artisanat et leur quotidien. C'est une expérience humaine authentique.</li><li>🎣 <strong>Initiation à la pêche traditionnelle</strong>: Apprenez les techniques de pêche locales auprès des villageois. Une activité qui renforce les liens et offre un aperçu de leur subsistance.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Échanges culturels</p>
+                                <p class="text-gray-700">Un petit cadeau (cahiers, stylos pour les enfants) est toujours apprécié, mais le respect et l'intérêt sont les plus beaux des présents.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Demandez toujours la permission avant de prendre des photos des personnes, par respect pour leur intimité.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Lever de soleil sur le Niger et retour à Faranah</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'un dernier lever de soleil magique sur le fleuve Niger, un moment de quiétude avant de quitter le parc. Après ces jours d'immersion dans la nature, vous retournez à Faranah, la tête remplie de souvenirs. C'est l'occasion de se reposer et de se préparer pour la prochaine étape de votre voyage vers Laine.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌄 <strong>Lever de soleil sur le fleuve Niger</strong>: Assistez à un spectacle inoubliable alors que le soleil se lève sur le fleuve, peignant le ciel de couleurs chaudes. Un moment de sérénité.</li><li>🚗 <strong>Retour à Faranah</strong>: Après le petit-déjeuner, reprenez la route vers Faranah. Profitez de l'après-midi pour vous détendre à l'hôtel ou explorer davantage la ville.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛌 Repos</p>
+                                <p class="text-gray-700">Après plusieurs jours d'activités intenses, une après-midi de repos à Faranah est bienvenue pour recharger les batteries.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Gastronomie</p>
+                                <p class="text-gray-700">Dégustez un plat local à Faranah, comme le "riz gras" ou le "poulet yassa", pour savourer les saveurs guinéennes.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">En route vers Laine, cœur de la culture Peule</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, votre aventure vous mène vers Laine, une sub-préfecture de la région de Faranah, réputée pour son authenticité et sa culture Peule. Le trajet vous fera traverser des paysages vallonnés et des villages traditionnels, offrant un aperçu de la vie rurale profonde. Laine sera votre base pour les prochains jours, une immersion totale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Voyage Faranah - Laine</strong>: Départ pour Laine, un trajet plus court que le précédent mais tout aussi pittoresque. Observez les changements de paysages et l'architecture des villages.</li><li>🏡 <strong>Installation et découverte des environs</strong>: Une fois installé, faites une première balade légère dans le village de Laine pour vous familiariser avec les lieux et saluer les habitants.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📍 Localisation</p>
+                                <p class="text-gray-700">Laine est une zone rurale, attendez-vous à des hébergements simples mais authentiques, souvent tenus par des familles locales.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🤝 Accueil</p>
+                                <p class="text-gray-700">Les habitants de Laine sont connus pour leur hospitalité. Un sourire et quelques mots en français ou en Peul ouvriront bien des portes.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Vie quotidienne et artisanat à Laine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans le quotidien des habitants de Laine. Cette journée est dédiée à la compréhension de leur mode de vie, de leurs traditions et de leur artisanat. Vous aurez l'opportunité d'observer les activités agricoles, de découvrir les techniques ancestrales et de partager des moments authentiques avec les communautés Peules.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🧑‍🌾 <strong>Observation des activités agricoles</strong>: Visitez les champs environnants et observez les méthodes de culture traditionnelles. Apprenez-en plus sur les cultures vivrières locales.</li><li>🎨 <strong>Découverte de l'artisanat local</strong>: Rencontrez des artisans qui travaillent le cuir, le bois ou tissent des étoffes. C'est une belle occasion de rapporter un souvenir unique et de soutenir l'économie locale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛍️ Souvenirs</p>
+                                <p class="text-gray-700">L'artisanat local est souvent de grande qualité et représente un excellent moyen de soutenir directement les communautés.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗣️ Communication</p>
+                                <p class="text-gray-700">Quelques phrases de base en Peul (comme "Afonama" pour bonjour) seront très appréciées par les habitants.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Randonnée et paysages autour de Laine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Les environs de Laine offrent des paysages vallonnés et des sentiers propices à la randonnée. Accompagné d'un guide local, partez à la découverte des beautés naturelles cachées de la région. Cascades secrètes, points de vue panoramiques et végétation luxuriante vous attendent pour une journée d'exploration active.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚶‍♀️ <strong>Randonnée vers une cascade locale</strong>: Partez en randonnée à travers la brousse pour atteindre une cascade rafraîchissante, un véritable havre de paix. Profitez d'une baignade si le lieu le permet.</li><li>🏞️ <strong>Ascension d'un point de vue panoramique</strong>: Grimpez sur une colline voisine pour admirer la vue imprenable sur les paysages environnants de Laine, ses villages et ses champs.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Chaussures</p>
+                                <p class="text-gray-700">Prévoyez de bonnes chaussures de marche, les sentiers peuvent être rocailleux ou glissants par endroits.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Eau</p>
+                                <p class="text-gray-700">Emportez suffisamment d'eau pour la randonnée, car les sources d'approvisionnement peuvent être rares sur les sentiers.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Musique, danse et contes Peuls</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Immergez-vous davantage dans la richesse culturelle Peule de Laine. Cette journée est dédiée aux arts traditionnels, avec la découverte de la musique, des danses et des contes qui rythment la vie des communautés. Une soirée spéciale pourra être organisée pour une expérience mémorable et festive.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🥁 <strong>Initiation aux instruments de musique traditionnels</strong>: Découvrez le djembé, le kora ou le balafon et apprenez quelques rythmes de base. Une expérience sonore unique.</li><li>💃 <strong>Soirée contes et danses traditionnelles</strong>: Participez à une soirée où les anciens racontent des légendes et où les jeunes exécutent des danses ancestrales. Un moment de partage inoubliable.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌟 Expérience</p>
+                                <p class="text-gray-700">Ces moments de partage culturel sont souvent les plus marquants d'un voyage. Laissez-vous porter par l'ambiance.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🙏 Respect</p>
+                                <p class="text-gray-700">Montrez votre respect pour les traditions et les artistes. Votre enthousiasme sera très apprécié.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Éducation et projets communautaires</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Si vous le souhaitez, cette journée peut être consacrée à la découverte des initiatives locales en matière d'éducation ou de développement communautaire à Laine. C'est une opportunité de comprendre les défis et les espoirs des habitants, et de voir comment le tourisme peut contribuer positivement à leur quotidien.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏫 <strong>Visite d'une école locale</strong>: Rencontrez les enseignants et les élèves, observez le fonctionnement d'une école rurale. Une expérience touchante et instructive.</li><li>🌱 <strong>Découverte de projets de développement</strong>: Si des projets (agriculture durable, santé, etc.) sont en cours, informez-vous sur leur impact et leur fonctionnement. Une belle façon de voir l'engagement local.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🤝 Contribution</p>
+                                <p class="text-gray-700">Si vous souhaitez faire un don, privilégiez les fournitures scolaires ou le matériel plutôt que l'argent liquide, et passez par la direction de l'école ou les responsables de projet.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌍 Tourisme responsable</p>
+                                <p class="text-gray-700">Le tourisme peut être un levier de développement. Choisissez des opérateurs qui travaillent en étroite collaboration avec les communautés locales.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Exploration des sources du Niger</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée d'excursion mémorable vous attend, direction les sources du fleuve Niger, un lieu emblématique et sacré. C'est une opportunité unique de voir où l'un des plus grands fleuves d'Afrique prend sa naissance, au milieu de paysages verdoyants et paisibles. Une expérience à la fois naturelle et symbolique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Excursion aux sources du Niger</strong>: Partez en véhicule pour une excursion vers les sources du fleuve Niger, un site naturel et historique important. Le trajet offre de belles vues sur la campagne.</li><li>🚶‍♂️ <strong>Découverte du site des sources</strong>: Explorez le lieu où le Niger prend sa source, souvent marqué par un petit ruisseau qui deviendra un fleuve majestueux. Un moment de contemplation et de réflexion.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Signification</p>
+                                <p class="text-gray-700">Le Niger est vital pour de nombreux pays d'Afrique de l'Ouest. Voir sa source est une expérience qui donne une perspective sur son importance.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌿 Environnement</p>
+                                <p class="text-gray-700">Le site est souvent entouré d'une végétation dense. Respectez la nature et ne laissez aucun déchet.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour vers Conakry, souvenirs en tête</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après ces jours riches en découvertes à Laine et dans la région de Faranah, il est temps de reprendre la route vers Conakry. Ce long trajet de retour est l'occasion de repenser à toutes les expériences vécues, aux paysages traversés et aux rencontres faites. Préparez-vous à retrouver l'effervescence de la capitale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Voyage Laine - Conakry</strong>: Départ matinal pour le long trajet de retour vers Conakry. Prévoyez des pauses régulières pour vous dégourdir les jambes.</li><li>🌆 <strong>Arrivée à Conakry et repos</strong>: Installation à votre hôtel à Conakry. Profitez de la soirée pour vous détendre et dîner dans un restaurant de la capitale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛣️ Confort</p>
+                                <p class="text-gray-700">Les routes peuvent être exigeantes. Un véhicule confortable et un chauffeur expérimenté sont essentiels pour ce type de trajet.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎶 Ambiance</p>
+                                <p class="text-gray-700">Profitez de la musique locale dans le véhicule pour rendre le trajet plus agréable et continuer l'immersion.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-15" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 15</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Détente et culture à Conakry</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Pour cette avant-dernière journée, profitez de Conakry pour une touche de détente et de culture. Une excursion aux îles de Loos offre une échappée belle loin de l'agitation urbaine, tandis que la visite du musée national vous plonge dans l'histoire et les traditions guinéennes. Une belle manière de conclure votre voyage.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚤 <strong>Excursion aux îles de Loos</strong>: Prenez une pirogue pour une journée d'évasion sur ces îles paradisiaques. Profitez des plages, de la baignade et des fruits de mer frais.</li><li>🏛️ <strong>Visite du Musée National de Guinée</strong>: Découvrez l'histoire, l'art et les traditions des différentes ethnies guinéennes à travers ses collections d'objets et d'artefacts.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour15.jpg" class="w-full h-64 object-cover" alt="Jour 15">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🏖️ Détente</p>
+                                <p class="text-gray-700">Les îles de Loos sont parfaites pour se relaxer et profiter de l'océan après l'aventure dans l'intérieur du pays.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Horaires</p>
+                                <p class="text-gray-700">Vérifiez les horaires des pirogues pour les îles de Loos et les heures d'ouverture du musée avant de vous y rendre.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-16" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 16</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ de Conakry</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est le dernier jour de votre voyage en Guinée. Après un petit-déjeuner tranquille, il est temps de vous diriger vers l'aéroport international de Conakry pour votre vol de retour. Emportez avec vous les souvenirs inoubliables de la nature sauvage, des rencontres authentiques et de la richesse culturelle de ce pays fascinant.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛍️ <strong>Derniers achats de souvenirs</strong>: Si le temps le permet, faites quelques derniers achats de souvenirs au marché artisanal avant de partir.</li><li>🛫 <strong>Transfert à l'aéroport et vol retour</strong>: Organisez votre transfert vers l'aéroport international Ahmed Sékou Touré (CKY) pour votre vol de retour vers Bamako, Mali.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Laine-guinee-5huxxrt0g2ftdd9/main/jour16.jpg" class="w-full h-64 object-cover" alt="Jour 16">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Aéroport</p>
+                                <p class="text-gray-700">Arrivez à l'aéroport avec suffisamment d'avance, les formalités peuvent prendre du temps.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Documents</p>
+                                <p class="text-gray-700">Assurez-vous d'avoir tous vos documents de voyage (passeport, billet d'avion, visa) à portée de main.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>750€/pers (vol A/R Bamako - Conakry en classe économique)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>420€/pers (taxi aéroport, bus/taxi brousse Conakry-Faranah A/R, transports locaux et excursions)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>480€/pers (environ 30€/jour pour 16 jours, cuisine locale et restaurants simples)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>790€/pers (hôtels 3 étoiles équivalents ou guesthouses confortables pour 15 nuits)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>250€/pers (entrées parcs, guides locaux, excursions aux îles de Loos et sources du Niger)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Les périodes idéales pour ce séjour sont les mois de novembre à avril, correspondant à la saison sèche.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">La saison sèche offre des conditions de voyage plus agréables, des routes plus praticables et moins de moustiques.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🌍 La Guinée est un pays d'Afrique de l'Ouest, riche en diversité ethnique (Peuls, Malinkés, Soussous, etc.) et en paysages, de la côte aux montagnes du Fouta Djallon et aux savanes de la Haute-Guinée.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🗣️ La population est majoritairement jeune et très accueillante. Le français est la langue officielle, mais de nombreuses langues locales sont parlées.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💧 Insolite: La Guinée est le "château d'eau" de l'Afrique de l'Ouest, abritant les sources de grands fleuves comme le Niger, le Sénégal et la Gambie.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🎶 La Guinée est également un pays de musique, berceau de nombreux artistes de renommée internationale.</p>
+                
+            </div>            
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Laine-guinee-5huxxrt0g2ftdd9/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.guinee.travel/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Office National du Tourisme Guinéen (à titre indicatif)</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/gn/conakry/22400/weather-forecast/22400" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Guinée</strong></a></li>
+                    
+                        <li><a href="https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/pays-zones-geographiques/guinee/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛂 Ministère de l'Europe et des Affaires étrangères</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+        
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
